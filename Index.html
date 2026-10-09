@@ -1,149 +1,165 @@
+
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Virtuals</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #07111f;
-      color: white;
-    }
+<meta charset="UTF-8">
 
-    header {
-      padding: 20px;
-      text-align: center;
-      background: #0d1b2e;
-      border-bottom: 1px solid #24364d;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header h1 {
-      color: #35d07f;
-      font-size: 28px;
-    }
+<title>Smart Virtuals | Football Predictions</title>
 
-    header p {
-      color: #aebdce;
-      margin-top: 6px;
-    }
+<style>
 
-    .hero {
-      padding: 45px 20px;
-      text-align: center;
-    }
+*{box-sizing:border-box}
 
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 12px;
-    }
+body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#fff}
 
-    .hero span {
-      color: #35d07f;
-    }
+header{padding:20px;background:#0d1b2d;border-bottom:1px solid #20334a}
 
-    .hero p {
-      color: #aebdce;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
+.logo{font-size:24px;font-weight:bold;color:#38e58b}
 
-    button {
-      background: #35d07f;
-      color: #061018;
-      border: none;
-      padding: 14px 24px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: bold;
-    }
+nav{margin-top:15px;color:#b8c6d9;font-size:14px}
 
-    .card {
-      margin: 20px;
-      padding: 22px;
-      background: #0d1b2e;
-      border: 1px solid #24364d;
-      border-radius: 16px;
-    }
+main{max-width:900px;margin:auto;padding:20px}
 
-    .card h3 {
-      margin-bottom: 15px;
-    }
+.hero{padding:25px 20px;background:linear-gradient(135deg,#123c35,#10243a);border-radius:16px}
 
-    .match {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 0;
-      border-bottom: 1px solid #24364d;
-    }
+.hero h1{font-size:30px;margin:0 0 12px}
 
-    .match:last-child {
-      border-bottom: none;
-    }
+.hero p{color:#c6d6e7;line-height:1.5}
 
-    .prediction {
-      color: #35d07f;
-      font-weight: bold;
-    }
+.tag{color:#38e58b;font-size:12px;font-weight:bold}
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #718399;
-    }
-  </style>
+.btn{display:inline-block;background:#35df87;color:#06140d;padding:13px 18px;border-radius:9px;text-decoration:none;font-weight:bold;border:0}
+
+h2{font-size:21px;margin-top:28px}
+
+.match{background:#101f31;border:1px solid #26384d;border-radius:13px;padding:18px;margin:14px 0}
+
+.match-top{display:flex;justify-content:space-between;gap:10px;color:#a9bbcf;font-size:12px}
+
+.teams{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:22px 0;font-weight:bold}
+
+.vs{color:#8192a8;font-size:12px}
+
+.predictions{display:flex;gap:8px}
+
+.pick{flex:1;text-align:center;padding:12px 5px;border:1px solid #35475b;border-radius:8px;color:#dce7f4}
+
+.pick strong{display:block;color:#39e58b;margin-top:5px}
+
+.note{color:#9eb0c5;font-size:12px;line-height:1.5}
+
+footer{text-align:center;padding:28px;color:#9eb0c5}
+
+</style>
+
 </head>
 
 <body>
 
-  <header>
-    <h1>Smart Virtuals</h1>
-    <p>Ghana's Virtual Football Platform</p>
-  </header>
+<header>
+
+  <div class="logo">⚽ SMART VIRTUALS</div>
+
+  <nav>HOME　　VIRTUAL FOOTBALL　　PREDICTIONS</nav>
+
+</header>
+
+<main>
 
   <section class="hero">
-    <h2>Smart <span>Virtual</span> Predictions</h2>
-    <p>
-      View virtual football match information and prediction examples
-      in one simple platform.
-    </p>
-    <button onclick="showMessage()">Get Started</button>
+
+    <div class="tag">YOUR VIRTUAL FOOTBALL HUB</div>
+
+    <h1>Smart Virtual Predictions</h1>
+
+    <p>Explore virtual football matches and view sample match predictions in one place.</p>
+
+    <a class="btn" href="#matches">View Matches ↓</a>
+
   </section>
 
-  <section class="card">
-    <h3>Today's Virtual Matches</h3>
+  <h2>⚡ Virtual Football Matches</h2>
+
+  <p class="note">Demo predictions only. These are examples, not live results or guaranteed winning tips.</p>
+
+  <section id="matches">
 
     <div class="match">
-      <div>Team A vs Team B</div>
-      <div class="prediction">Prediction: 1</div>
+
+      <div class="match-top"><span>VIRTUAL LEAGUE</span><span>DEMO MATCH 01</span></div>
+
+      <div class="teams"><span>Blue FC</span><span class="vs">VS</span><span>Red United</span></div>
+
+      <div class="predictions">
+
+        <div class="pick">1<strong>Home</strong></div>
+
+        <div class="pick">X<strong>Draw</strong></div>
+
+        <div class="pick">2<strong>Away</strong></div>
+
+      </div>
+
     </div>
 
     <div class="match">
-      <div>Team C vs Team D</div>
-      <div class="prediction">Prediction: X</div>
+
+      <div class="match-top"><span>VIRTUAL LEAGUE</span><span>DEMO MATCH 02</span></div>
+
+      <div class="teams"><span>City Stars</span><span class="vs">VS</span><span>United FC</span></div>
+
+      <div class="predictions">
+
+        <div class="pick">1<strong>Home</strong></div>
+
+        <div class="pick">X<strong>Draw</strong></div>
+
+        <div class="pick">2<strong>Away</strong></div>
+
+      </div>
+
     </div>
 
     <div class="match">
-      <div>Team E vs Team F</div>
-      <div class="prediction">Prediction: 2</div>
+
+      <div class="match-top"><span>VIRTUAL LEAGUE</span><span>DEMO MATCH 03</span></div>
+
+      <div class="teams"><span>Golden FC</span><span class="vs">VS</span><span>Royal FC</span></div>
+
+      <div class="predictions">
+
+        <div class="pick">1<strong>Home</strong></div>
+
+        <div class="pick">X<strong>Draw</strong></div>
+
+        <div class="pick">2<strong>Away</strong></div>
+
+      </div>
+
     </div>
+
   </section>
 
-  <footer>
-    © 2026 Smart Virtuals
-  </footer>
+  <section class="hero">
 
-  <script>
-    function showMessage() {
-      alert("Welcome to Smart Virtuals!");
-    }
-  </script>
+    <h2>Need Help?</h2>
+
+    <p>Contact Smart Virtuals on WhatsApp for enquiries.</p>
+
+    <a class="btn" href="https://wa.me/233535422231" target="_blank" rel="noopener">Chat on WhatsApp</a>
+
+  </section>
+
+</main>
+
+<footer>© 2026 Smart Virtuals. All rights reserved.</footer>
 
 </body>
+
 </html>
